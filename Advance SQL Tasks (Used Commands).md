@@ -344,6 +344,24 @@ FROM Members
 JOIN BorrowedBooks ON Members.MemberID = BorrowedBooks.MemberID
 JOIN Books ON BorrowedBooks.BookID = Books.BookID;
 ```
+Data for Books Table
+
+```sql
+INSERT INTO Books (BookID, Title, AuthorID, Genre, Price, PublicationDate)
+VALUES
+(101, 'Book A', 1, 'Fiction', 10.99, '2022-01-01'),
+(102, 'Book B', 2, 'Non-Fiction', 12.99, '2021-02-01'),
+(103, 'Book C', 3, 'Science Fiction', 8.99, '2020-03-01'),
+(104, 'Book D', 4, 'Mystery', 15.99, '2019-04-01'),
+(105, 'Book E', 1, 'Romance', 9.99, '2018-05-01'),
+(106, 'Book F', 2, 'Fiction', 7.99, '2023-06-01'),
+(107, 'Book G', 3, 'Thriller', 6.99, '2022-07-01'),
+(108, 'Book H', 4, 'Fantasy', 11.99, '2023-08-01'),
+(109, 'Book I', 1, 'Fiction', 14.99, '2021-09-01'),
+(110, 'Book J', 2, 'Non-Fiction', 13.99, '2020-10-01'),
+(111, 'Book K', 3, 'Science Fiction', 9.49, '2022-11-01'),
+(112, 'Book L', 4, 'Mystery', 16.99, '2019-12-01');
+```
 
 ---
 
